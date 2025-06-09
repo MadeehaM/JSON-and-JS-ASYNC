@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <script>
+        var Obj={name:"Riya", age:5, grade:8};
+        var test=JSON.stringify(Obj);
+        var newObj= JSON.parse(test);
+        document.getElementById("result").innerHTML= "My name is " + newObj.name;
+        document.getElementById("result2").innerHTML= "My grade is "+ newObj.grade
+        document.getElementById("result1").innerHTML=test;
+        
+  
+    </script>
+</body>
+</html>
